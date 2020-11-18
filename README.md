@@ -16,8 +16,8 @@
 
 - [x] Write a `CREATE TABLE` SQL statement for the songs (add this to the [database.sql](database.sql) file).
 - [x] Add a couple sample records to the table using Postico for testing.
-- [ ] Switch from returning data in the array to returning data from the database in your GET route (`song.router.js`).
-    - [ ] You'll need to bring in `pg` and set up the connection in your `song.router.js` file
+- [x] Switch from returning data in the array to returning data from the database in your GET route (`song.router.js`).
+    - [x] You'll need to bring in `pg` and set up the connection in your `song.router.js` file
 - [ ] Update your POST route to `INSERT INTO` the songs table (`song.router.js`).
 
 
