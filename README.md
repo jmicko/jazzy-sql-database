@@ -18,12 +18,12 @@
 - [x] Add a couple sample records to the table using Postico for testing.
 - [x] Switch from returning data in the array to returning data from the database in your GET route (`song.router.js`).
     - [x] You'll need to bring in `pg` and set up the connection in your `song.router.js` file
-- [ ] Update your POST route to `INSERT INTO` the songs table (`song.router.js`).
+- [x] Update your POST route to `INSERT INTO` the songs table (`song.router.js`).
 
 
 ## Stretch
 
-- [ ] Order results by the name of the artist / song.
+- [x] Order results by the name of the artist / song.
 - [ ] Add an extra column in the database (using Postico).
 - [ ] Update the HTML, JS, AJAX and server route to support the new database column.
-- [ ] Move the duplicated `pg` connection code to a module.
+- [x] Move the duplicated `pg` connection code to a module.
