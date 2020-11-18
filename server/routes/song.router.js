@@ -44,8 +44,19 @@ router.get('/', (req, res) => {
 // });
 
 router.post('/', (req, res) => {
-    
-    res.sendStatus(201);
+    let song = req.body;
+    let sqlText =  `INSERT INTO songs (title, length, date_released)
+                    VALUES ($1, $2, $3);`
+    // $1, $2, $3, $4 are filled in by the array below in the query
+    pool.query(sqlText, [song.title, song.length, song.date_released,] )
+    .then( (response) => {
+        res.sendStatus(201); // send ok status, insert successful
+    })
+    // catch and log any errors
+    .catch( (error) => {
+        console.log('error from db', error);
+        res.sendStatus(500);
+    })
 });
 
 module.exports = router;
